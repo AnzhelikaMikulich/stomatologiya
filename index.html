@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230429214104">
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230429214104"
+/>
+	<title>Главная</title>
+</head>
+
+<body class="wrapper">
+  <header class="header" >
+    <div class="container">
+      <a href="#" class="logo_header"><picture><source srcset="./img/logostom.webp" type="image/webp"><img src="./img/logostom.png" alt="logo"></picture></a>
+      <div class="sotial_header">
+        <a href="#" class="telegramm sotial_icon"><svg width="24" height="21" viewBox="0 0 24 21" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M21.514 0.143667C21.8091 0.0164576 22.1321 -0.0274162 22.4493 0.016612C22.7666 0.0606403 23.0665 0.190961 23.3179 0.394011C23.5693 0.59706 23.763 0.865415 23.8788 1.17114C23.9946 1.47687 24.0282 1.8088 23.9762 2.13237L21.268 18.9581C21.0053 20.5811 19.2667 21.5118 17.8135 20.7034C16.5979 20.027 14.7924 18.985 13.1684 17.8977C12.3564 17.3534 9.86912 15.6106 10.1748 14.3704C10.4375 13.31 14.6169 9.32522 17.0051 6.95614C17.9424 6.02539 17.515 5.48846 16.408 6.34461C13.658 8.4703 9.2458 11.7029 7.78661 12.6128C6.49937 13.4152 5.82828 13.5521 5.02584 13.4152C3.56187 13.1656 2.20418 12.7792 1.09605 12.3083C-0.401352 11.6723 -0.328512 9.56372 1.09486 8.94974L21.514 0.143667Z"
+              fill="#F9F9EF" />
+          </svg> <span>Telegram</span></a>
+        <a href="#" class="watsapp sotial_icon"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_402_115)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.19111 18.7487C1.11411 16.8975 0.547712 14.7973 0.548312 12.6465H0.548413C0.551213 5.91663 6.07111 0.441406 12.8534 0.441406C16.1452 0.442895 19.2347 1.71406 21.5577 4.02104C23.8811 6.32822 25.1599 9.39486 25.1586 12.6561C25.1557 19.3862 19.6354 24.8617 12.8539 24.8617H12.8485C10.7943 24.8616 8.77274 24.3509 6.96851 23.3763L0.445312 25.0735L2.19111 18.7487ZM8.95331 6.81094C9.18021 6.82017 9.43131 6.83079 9.66991 7.35698V7.35708C9.8326 7.71602 10.1061 8.38453 10.3245 8.91843C10.4863 9.31388 10.6178 9.63549 10.6518 9.70275C10.7313 9.86082 10.7845 10.0454 10.6782 10.2563C10.6622 10.2881 10.6474 10.3181 10.6332 10.3467C10.5536 10.508 10.4951 10.6266 10.3602 10.7833C10.3068 10.8451 10.2516 10.9117 10.1964 10.9783C10.0869 11.1105 9.97737 11.2426 9.88221 11.3368C9.72251 11.4943 9.55661 11.6655 9.74241 11.9814C9.92821 12.2979 10.5674 13.3323 11.5142 14.1699C12.5314 15.0697 13.4149 15.4503 13.8637 15.6436C13.9518 15.6815 14.0232 15.7123 14.0755 15.7383C14.3939 15.8964 14.5798 15.8701 14.7655 15.6588C14.9514 15.4481 15.5613 14.7364 15.7737 14.4205C15.9861 14.1041 16.1984 14.1567 16.4904 14.262C16.7823 14.3675 18.3481 15.132 18.6667 15.2901C18.7287 15.3208 18.7867 15.3486 18.8405 15.3744C19.0629 15.4808 19.2131 15.5528 19.2772 15.6588C19.3568 15.791 19.3568 16.4234 19.0913 17.1613C18.826 17.8992 17.5256 18.6109 16.9416 18.6634C16.8855 18.6685 16.8297 18.675 16.7723 18.6817C16.2327 18.7448 15.5516 18.8244 13.1198 17.8729C10.1284 16.7024 8.1559 13.8019 7.74789 13.2019C7.71437 13.1526 7.6914 13.1189 7.67931 13.1029L7.67585 13.0983C7.50442 12.871 6.37891 11.3785 6.37891 9.83442C6.37891 8.37926 7.09967 7.61641 7.43142 7.2653C7.45412 7.24127 7.475 7.21917 7.49371 7.19891C7.78541 6.88288 8.13051 6.8036 8.34291 6.8036C8.35676 6.8036 8.37061 6.8036 8.38445 6.80359C8.58272 6.80356 8.77963 6.80352 8.95331 6.81094Z"
+                fill="#F9F9EF" />
+            </g>
+            <defs>
+              <clipPath id="clip0_402_115">
+                <rect width="25.6" height="25.6" fill="white" />
+              </clipPath>
+            </defs>
+          </svg> <span>WhatsApp</span></a>
+        <div class="phone_sotial"><a href="tel:+74955802805">+7 (495) 580-28-05</a></div>
+      </div>
+      <div class="menu_header"><div class="img"></div> <span>Меню</span> </div>
+    </div>
+  </header>
+  <div class="fixed_menu" id="head">
+    <div class="menu_column">
+      <a href="#popup-callback-me" class="menu_sign"><svg width="35" height="34" viewBox="0 0 35 34" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_402_1066)">
+            <path
+              d="M10.3846 9.14365C11.6806 9.14365 12.6886 8.11153 12.6886 6.86558V2.30944C12.6886 1.02803 11.6447 0.0313721 10.3846 0.0313721C9.08858 0.0313721 8.08057 1.0635 8.08057 2.30944V6.83005C8.08057 8.11147 9.08858 9.14359 10.3846 9.14359V9.14365Z"
+              fill="#9AD9F3" />
+            <path
+              d="M24.7127 9.14365C26.0087 9.14365 27.0168 8.11153 27.0168 6.86558V2.30944C27.0168 1.02803 25.9729 0.0313721 24.7127 0.0313721C23.4167 0.0313721 22.4087 1.0635 22.4087 2.30944V6.83005C22.4087 8.11147 23.4167 9.14359 24.7127 9.14359V9.14365Z"
+              fill="#9AD9F3" />
+            <path
+              d="M31.9127 4.58765H28.9246V6.83019C28.9246 9.10826 27.0525 10.9948 24.7126 10.9948C22.4086 10.9948 20.5005 9.10826 20.5005 6.83019V4.58765H14.5962V6.83019C14.5962 9.10826 12.7241 10.9948 10.3841 10.9948C8.0801 10.9948 6.17207 9.10826 6.17207 6.83019V4.58765H3.18403C1.78001 4.58765 0.664062 5.69102 0.664062 7.07922V31.3193C0.664062 32.7075 1.81621 33.8109 3.18403 33.8109H31.9484C33.3524 33.8109 34.4684 32.7075 34.4684 31.3193V7.07922C34.4684 5.69102 33.3165 4.58765 31.9125 4.58765H31.9127ZM12.4004 26.2649C12.4004 26.7632 11.9685 27.1903 11.4645 27.1903H8.36842C7.86443 27.1903 7.43248 26.7633 7.43248 26.2649V23.8801C7.43248 23.3817 7.8644 22.9547 8.36842 22.9547H11.4645C11.9685 22.9547 12.4004 23.3462 12.4004 23.8801V26.2649ZM12.4004 19.3951C12.4004 19.8934 11.9685 20.3205 11.4645 20.3205H8.36842C7.86443 20.3205 7.43248 19.929 7.43248 19.3951V17.0102C7.43248 16.5119 7.8644 16.0848 8.36842 16.0848H11.4645C11.9685 16.0848 12.4004 16.5119 12.4004 17.0102V19.3951ZM20.0325 26.2649C20.0325 26.7632 19.6006 27.1903 19.0966 27.1903H16.0005C15.4965 27.1903 15.0646 26.7633 15.0646 26.2649V23.8801C15.0646 23.3817 15.4606 22.9547 16.0005 22.9547H19.0966C19.6006 22.9547 20.0325 23.3462 20.0325 23.8801V26.2649ZM20.0325 19.3951C20.0325 19.8934 19.6006 20.3205 19.0966 20.3205H16.0005C15.4965 20.3205 15.0646 19.929 15.0646 19.3951V17.0102C15.0646 16.5119 15.4606 16.0848 16.0005 16.0848H19.0966C19.6006 16.0848 20.0325 16.5119 20.0325 17.0102V19.3951ZM27.6286 26.2649C27.6286 26.7632 27.1967 27.1903 26.6927 27.1903H23.6325C23.1285 27.1903 22.6966 26.7633 22.6966 26.2649V23.8801C22.6966 23.3817 23.1285 22.9547 23.6325 22.9547H26.6927C27.1967 22.9547 27.6286 23.3462 27.6286 23.8801V26.2649ZM27.6286 19.3951C27.6286 19.8934 27.1967 20.3205 26.6927 20.3205H23.6325C23.1285 20.3205 22.6966 19.929 22.6966 19.3951V17.0102C22.6966 16.5119 23.1285 16.0848 23.6325 16.0848H26.6927C27.1967 16.0848 27.6286 16.5119 27.6286 17.0102V19.3951Z"
+              fill="#9AD9F3" />
+          </g>
+          <defs>
+            <clipPath id="clip0_402_1066">
+              <rect width="33.8469" height="33.8469" fill="white" transform="translate(0.641113)" />
+            </clipPath>
+          </defs>
+        </svg></a>
+      <a href="#contacts" class="menu_map"><svg width="31" height="38" viewBox="0 0 31 38" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15.5645 0.607666C7.66694 0.607666 0.521484 6.6625 0.521484 16.0268C0.521484 22.0064 5.12842 29.0391 14.3235 37.1435C15.038 37.764 16.1099 37.764 16.8244 37.1435C26.0007 29.0391 30.6076 22.0064 30.6076 16.0268C30.6076 6.6625 23.4622 0.607666 15.5645 0.607666ZM15.5645 19.4115C13.4961 19.4115 11.8038 17.7191 11.8038 15.6507C11.8038 13.5823 13.4961 11.89 15.5645 11.89C17.633 11.89 19.3253 13.5823 19.3253 15.6507C19.3253 17.7191 17.633 19.4115 15.5645 19.4115Z"
+            fill="#9AD9F3" />
+        </svg></a>
+      <div class="menu_mess">
+        <svg width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_402_1073)">
+            <path
+              d="M4.96292 17.3348V16.6497C2.51171 18.2438 0.886462 20.8171 0.513 23.6951C0.139575 26.573 1.0557 29.4689 3.02057 31.6232L2.44771 35.8984L6.16094 33.941C9.35034 35.4508 13.1075 35.1928 16.0554 33.2612C12.7956 32.0271 9.99013 29.8444 8.01002 27.0009C6.02954 24.1579 4.96729 20.7876 4.96292 17.3348Z"
+              fill="#9AD9F3" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M38.4747 19.9148C38.1365 21.8543 37.4412 23.7154 36.4227 25.4059L37.5622 28.7538L38.7079 32.0658L32.162 30.1188C31.6499 30.4928 31.1166 30.8367 30.5637 31.1489C30.1957 31.3583 29.8172 31.556 29.4285 31.7414C29.0394 31.9339 28.6439 32.1053 28.241 32.2566C27.8382 32.4079 27.4266 32.5451 27.0067 32.6687C26.6388 32.775 26.2672 32.8695 25.8923 32.9518C22.9692 33.5745 19.9298 33.3963 17.1019 32.4366L16.7684 32.3234C15.8981 32.0086 15.0567 31.6213 14.2532 31.1646L13.9147 30.9638C13.6924 30.8262 13.4719 30.6853 13.2532 30.5413L12.9302 30.3199C12.7148 30.1723 12.5049 30.0178 12.3 29.8565L11.9927 29.6143C11.6905 29.3671 11.3973 29.1095 11.1125 28.8418C10.9251 28.6632 10.7409 28.4811 10.5604 28.2957C10.2898 28.014 10.0293 27.7237 9.77938 27.4251C9.61265 27.2257 9.45136 27.0231 9.29516 26.8172C9.13896 26.6113 8.98784 26.4001 8.84218 26.1838C8.62349 25.8676 8.41535 25.5381 8.21737 25.1946C8.08914 24.9711 7.96419 24.743 7.8425 24.5094C7.28378 23.4554 6.84533 22.3426 6.53548 21.1925C6.46937 20.9349 6.4087 20.674 6.35312 20.4096C6.13154 19.3381 6.01966 18.2477 6.02002 17.154C6.02002 16.7419 6.03564 16.3334 6.06688 15.9281C6.12791 15.1132 6.25178 14.3037 6.43668 13.5072C6.49916 13.2463 6.56673 12.9887 6.63974 12.7347L6.75417 12.3535C6.83373 12.0995 6.91909 11.8487 7.00918 11.6015C7.28195 10.8627 7.60889 10.1449 7.98813 9.45359C8.11672 9.22688 8.24858 9.00196 8.38407 8.77884C8.7248 8.22485 9.09823 7.69166 9.50326 7.18217C9.68053 6.97953 9.85417 6.78048 10.0242 6.58467C10.1909 6.38921 10.3645 6.19843 10.5451 6.01303C10.7256 5.82764 10.9098 5.64547 11.0972 5.46691C14.1329 2.60046 18.1676 1.00122 22.3643 1.00122C26.561 1.00122 30.596 2.60046 33.631 5.46691C33.8185 5.64547 34.0027 5.82764 34.1832 6.01303C34.3467 6.19843 34.5199 6.38885 34.7041 6.58467C34.8883 6.78048 35.0619 6.97953 35.225 7.18217C35.63 7.69165 36.0042 8.22481 36.3446 8.77884C36.4837 8.99873 36.6156 9.22364 36.7405 9.45359C37.1194 10.1449 37.447 10.8628 37.7198 11.6015C37.8099 11.8487 37.8949 12.0995 37.9748 12.3535L38.0893 12.7347C38.1623 12.9887 38.2298 13.2463 38.2923 13.5072C38.6973 15.2508 38.8103 17.048 38.6258 18.828C38.5876 19.2092 38.5372 19.5713 38.4747 19.9148ZM14.4878 19.5915C15.4224 19.5915 16.1801 18.8338 16.1801 17.8991C16.1801 16.9645 15.4224 16.2068 14.4878 16.2068C13.5531 16.2068 12.7954 16.9645 12.7954 17.8991C12.7954 18.8338 13.5531 19.5915 14.4878 19.5915ZM23.5648 17.8991C23.5648 18.8338 22.8071 19.5915 21.8724 19.5915C20.9378 19.5915 20.1801 18.8338 20.1801 17.8991C20.1801 16.9645 20.9378 16.2068 21.8724 16.2068C22.8071 16.2068 23.5648 16.9645 23.5648 17.8991ZM29.2571 19.5915C30.1918 19.5915 30.9495 18.8338 30.9495 17.8991C30.9495 16.9645 30.1918 16.2068 29.2571 16.2068C28.3225 16.2068 27.5648 16.9645 27.5648 17.8991C27.5648 18.8338 28.3225 19.5915 29.2571 19.5915Z"
+              fill="#9AD9F3" />
+          </g>
+          <defs>
+            <clipPath id="clip0_402_1073">
+              <rect width="38.3598" height="34.9751" fill="white" transform="translate(0.384766 0.976074)" />
+            </clipPath>
+          </defs>
+        </svg>
+        <div class="all_mess">
+          <a href="#" class="teleg_fix"><svg width="24" height="21" viewBox="0 0 24 21" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M21.514 0.143667C21.8091 0.0164576 22.1321 -0.0274162 22.4493 0.016612C22.7666 0.0606403 23.0665 0.190961 23.3179 0.394011C23.5693 0.59706 23.763 0.865415 23.8788 1.17114C23.9946 1.47687 24.0282 1.8088 23.9762 2.13237L21.268 18.9581C21.0053 20.5811 19.2667 21.5118 17.8135 20.7034C16.5979 20.027 14.7924 18.985 13.1684 17.8977C12.3564 17.3534 9.86912 15.6106 10.1748 14.3704C10.4375 13.31 14.6169 9.32522 17.0051 6.95614C17.9424 6.02539 17.515 5.48846 16.408 6.34461C13.658 8.4703 9.2458 11.7029 7.78661 12.6128C6.49937 13.4152 5.82828 13.5521 5.02584 13.4152C3.56187 13.1656 2.20418 12.7792 1.09605 12.3083C-0.401352 11.6723 -0.328512 9.56372 1.09486 8.94974L21.514 0.143667Z"
+                fill="#F9F9EF" />
+            </svg><span>Telegram</span></a>
+          <a href="#" class="watsap_fix"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_402_115)">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M2.19111 18.7487C1.11411 16.8975 0.547712 14.7973 0.548312 12.6465H0.548413C0.551213 5.91663 6.07111 0.441406 12.8534 0.441406C16.1452 0.442895 19.2347 1.71406 21.5577 4.02104C23.8811 6.32822 25.1599 9.39486 25.1586 12.6561C25.1557 19.3862 19.6354 24.8617 12.8539 24.8617H12.8485C10.7943 24.8616 8.77274 24.3509 6.96851 23.3763L0.445312 25.0735L2.19111 18.7487ZM8.95331 6.81094C9.18021 6.82017 9.43131 6.83079 9.66991 7.35698V7.35708C9.8326 7.71602 10.1061 8.38453 10.3245 8.91843C10.4863 9.31388 10.6178 9.63549 10.6518 9.70275C10.7313 9.86082 10.7845 10.0454 10.6782 10.2563C10.6622 10.2881 10.6474 10.3181 10.6332 10.3467C10.5536 10.508 10.4951 10.6266 10.3602 10.7833C10.3068 10.8451 10.2516 10.9117 10.1964 10.9783C10.0869 11.1105 9.97737 11.2426 9.88221 11.3368C9.72251 11.4943 9.55661 11.6655 9.74241 11.9814C9.92821 12.2979 10.5674 13.3323 11.5142 14.1699C12.5314 15.0697 13.4149 15.4503 13.8637 15.6436C13.9518 15.6815 14.0232 15.7123 14.0755 15.7383C14.3939 15.8964 14.5798 15.8701 14.7655 15.6588C14.9514 15.4481 15.5613 14.7364 15.7737 14.4205C15.9861 14.1041 16.1984 14.1567 16.4904 14.262C16.7823 14.3675 18.3481 15.132 18.6667 15.2901C18.7287 15.3208 18.7867 15.3486 18.8405 15.3744C19.0629 15.4808 19.2131 15.5528 19.2772 15.6588C19.3568 15.791 19.3568 16.4234 19.0913 17.1613C18.826 17.8992 17.5256 18.6109 16.9416 18.6634C16.8855 18.6685 16.8297 18.675 16.7723 18.6817C16.2327 18.7448 15.5516 18.8244 13.1198 17.8729C10.1284 16.7024 8.1559 13.8019 7.74789 13.2019C7.71437 13.1526 7.6914 13.1189 7.67931 13.1029L7.67585 13.0983C7.50442 12.871 6.37891 11.3785 6.37891 9.83442C6.37891 8.37926 7.09967 7.61641 7.43142 7.2653C7.45412 7.24127 7.475 7.21917 7.49371 7.19891C7.78541 6.88288 8.13051 6.8036 8.34291 6.8036C8.35676 6.8036 8.37061 6.8036 8.38445 6.80359C8.58272 6.80356 8.77963 6.80352 8.95331 6.81094Z"
+                  fill="#F9F9EF" />
+              </g>
+              <defs>
+                <clipPath id="clip0_402_115">
+                  <rect width="25.6" height="25.6" fill="white" />
+                </clipPath>
+              </defs>
+            </svg><span>WhatsApp</span></a>
+        </div>
+
+      </div>
+      <a href="tel:+74955802805" class="menu_tel"><svg width="39" height="39" viewBox="0 0 39 39" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_402_1082)">
+            <path
+              d="M16.6864 22.433C18.7784 24.6001 21.3097 26.2732 24.1024 27.3349L27.8806 24.2648C27.9926 24.186 28.1254 24.1438 28.2614 24.1438C28.3974 24.1438 28.5302 24.186 28.6422 24.2648L35.6574 28.8801C35.9237 29.0436 36.1491 29.2681 36.3159 29.5359C36.4827 29.8037 36.5862 30.1074 36.6182 30.423C36.6503 30.7386 36.6101 31.0575 36.5007 31.3546C36.3913 31.6516 36.2159 31.9186 35.9881 32.1344L32.701 35.4501C32.2302 35.9251 31.6517 36.2737 31.0169 36.4647C30.3821 36.6558 29.7109 36.6834 29.0631 36.5451C22.6014 35.1823 16.6455 31.9906 11.876 27.3349C7.21244 22.6328 3.98527 16.6498 2.58597 10.1117C2.44774 9.46047 2.47659 8.78382 2.66973 8.14732C2.86287 7.51083 3.21374 6.93608 3.68835 6.47876L7.09571 3.12213C7.30656 2.90087 7.5637 2.73118 7.84788 2.62578C8.13205 2.52038 8.4359 2.48199 8.73666 2.51349C9.03742 2.54499 9.32731 2.64556 9.58462 2.80768C9.84192 2.96979 10.06 3.18925 10.2225 3.44961L14.8925 10.521C14.9731 10.6321 15.0166 10.7666 15.0166 10.9048C15.0166 11.043 14.9731 11.1775 14.8925 11.2886L11.8159 15.0648C12.8838 17.8595 14.5475 20.3764 16.6864 22.433Z"
+              fill="#9AD9F3" />
+          </g>
+          <defs>
+            <clipPath id="clip0_402_1082">
+              <rect width="37.2316" height="37.2316" fill="white" transform="translate(0.94873 0.951172)" />
+            </clipPath>
+          </defs>
+        </svg></a>
+    </div>
+  </div>
+
+  <div class="burger_menu">
+    <div class="container">
+      <nav class="header_nav">
+        <li class="header_li"><a href="#main_banner">Главная</a></li>
+        <li class="header_li"><a href="#zabota">Преимущества</a></li>
+        <li class="header_li"><a href="#stages_treatment">Этапы лечения</a></li>
+        <li class="header_li"><a href="#team_slider">Специалисты</a></li>
+        <li class="header_li"><a href="#team_info">Команда</a></li>
+        <li class="header_li"><a href="#feedbacks">Отзывы</a></li>
+        <li class="header_li"><a href="#contacts">Контакты</a></li>
+      </nav>
+      <div class="form_block">
+        <div class="form_container  ">
+          <h2 class="title">Остались вопросы?</h2>
+          <p class="subtitle">Оставьте заявку на обратный звонок, и наши опытные стоматологи проконсультируют вас по
+            всем вопросам детской стоматологии</p>
+
+          <div class="form">
+            <input type="text" class="input_form name_input" placeholder="Ваше имя">
+            <input type="tel" class="input_form phone_input" placeholder="Телефон">
+            <input type="text" class="input_form name_child" placeholder="Имя ребенка">
+            <textarea name="textarea_text" class="input_form text_input" id="" cols="30" rows="10"
+              placeholder="Опишите ваш вопрос"></textarea>
+            <input type="submit" class="button_braun" value="Отправить запрос">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="sotial_header">
+        <a href="#" class="telegramm sotial_icon"><svg width="24" height="21" viewBox="0 0 24 21" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M21.514 0.143667C21.8091 0.0164576 22.1321 -0.0274162 22.4493 0.016612C22.7666 0.0606403 23.0665 0.190961 23.3179 0.394011C23.5693 0.59706 23.763 0.865415 23.8788 1.17114C23.9946 1.47687 24.0282 1.8088 23.9762 2.13237L21.268 18.9581C21.0053 20.5811 19.2667 21.5118 17.8135 20.7034C16.5979 20.027 14.7924 18.985 13.1684 17.8977C12.3564 17.3534 9.86912 15.6106 10.1748 14.3704C10.4375 13.31 14.6169 9.32522 17.0051 6.95614C17.9424 6.02539 17.515 5.48846 16.408 6.34461C13.658 8.4703 9.2458 11.7029 7.78661 12.6128C6.49937 13.4152 5.82828 13.5521 5.02584 13.4152C3.56187 13.1656 2.20418 12.7792 1.09605 12.3083C-0.401352 11.6723 -0.328512 9.56372 1.09486 8.94974L21.514 0.143667Z"
+              fill="#F9F9EF" />
+          </svg> <span>Telegram</span></a>
+        <a href="#" class="watsapp sotial_icon"><svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_402_115)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.19111 18.7487C1.11411 16.8975 0.547712 14.7973 0.548312 12.6465H0.548413C0.551213 5.91663 6.07111 0.441406 12.8534 0.441406C16.1452 0.442895 19.2347 1.71406 21.5577 4.02104C23.8811 6.32822 25.1599 9.39486 25.1586 12.6561C25.1557 19.3862 19.6354 24.8617 12.8539 24.8617H12.8485C10.7943 24.8616 8.77274 24.3509 6.96851 23.3763L0.445312 25.0735L2.19111 18.7487ZM8.95331 6.81094C9.18021 6.82017 9.43131 6.83079 9.66991 7.35698V7.35708C9.8326 7.71602 10.1061 8.38453 10.3245 8.91843C10.4863 9.31388 10.6178 9.63549 10.6518 9.70275C10.7313 9.86082 10.7845 10.0454 10.6782 10.2563C10.6622 10.2881 10.6474 10.3181 10.6332 10.3467C10.5536 10.508 10.4951 10.6266 10.3602 10.7833C10.3068 10.8451 10.2516 10.9117 10.1964 10.9783C10.0869 11.1105 9.97737 11.2426 9.88221 11.3368C9.72251 11.4943 9.55661 11.6655 9.74241 11.9814C9.92821 12.2979 10.5674 13.3323 11.5142 14.1699C12.5314 15.0697 13.4149 15.4503 13.8637 15.6436C13.9518 15.6815 14.0232 15.7123 14.0755 15.7383C14.3939 15.8964 14.5798 15.8701 14.7655 15.6588C14.9514 15.4481 15.5613 14.7364 15.7737 14.4205C15.9861 14.1041 16.1984 14.1567 16.4904 14.262C16.7823 14.3675 18.3481 15.132 18.6667 15.2901C18.7287 15.3208 18.7867 15.3486 18.8405 15.3744C19.0629 15.4808 19.2131 15.5528 19.2772 15.6588C19.3568 15.791 19.3568 16.4234 19.0913 17.1613C18.826 17.8992 17.5256 18.6109 16.9416 18.6634C16.8855 18.6685 16.8297 18.675 16.7723 18.6817C16.2327 18.7448 15.5516 18.8244 13.1198 17.8729C10.1284 16.7024 8.1559 13.8019 7.74789 13.2019C7.71437 13.1526 7.6914 13.1189 7.67931 13.1029L7.67585 13.0983C7.50442 12.871 6.37891 11.3785 6.37891 9.83442C6.37891 8.37926 7.09967 7.61641 7.43142 7.2653C7.45412 7.24127 7.475 7.21917 7.49371 7.19891C7.78541 6.88288 8.13051 6.8036 8.34291 6.8036C8.35676 6.8036 8.37061 6.8036 8.38445 6.80359C8.58272 6.80356 8.77963 6.80352 8.95331 6.81094Z"
+                fill="#F9F9EF" />
+            </g>
+            <defs>
+              <clipPath id="clip0_402_115">
+                <rect width="25.6" height="25.6" fill="white" />
+              </clipPath>
+            </defs>
+          </svg> <span>WhatsApp</span></a>
+        <div class="phone_sotial"><a href="tel:+74955802805">+7 (495) 580-28-05</a></div>
+      </div>
+
+
+    </div>
+  </div>
+  <main class="main">
+    <section class="main_banner" id="main_banner">
+      <div class="container">
+        <h1 class="title_text">
+          Лечение в медикаментозном сне
+        </h1>
+        <ul class="list_li">
+          <li class="li_text">Лечение зубов во время медикаментозного сна
+            у детей</li>
+          <li class="li_text">Команда докторов высочайшего уровня</li>
+          <li class="li_text">Лучшие технологии и материалы ведущих европейских производителей</li>
+          <li class="li_text">Нам доверяют здоровье детей
+            от 0 до 18 лет</li>
+        </ul>
+
+      </div>
+      <div class="circle_animate">
+
+        <picture><source srcset="./img/little1.webp" type="image/webp"><img class="little1" src="./img/little1.png" alt="elips"></picture>
+        <picture><source srcset="./img/little2.webp" type="image/webp"><img class="little2" src="./img/little2.png" alt="elips"></picture>
+        <picture><source srcset="./img/little3.webp" type="image/webp"><img class="little3" src="./img/little3.png" alt="elips"></picture>
+      </div>
+      <div class="flovers">
+
+        <div class="flow1 button_fl">
+          <picture><source srcset="./img/flow1.webp" type="image/webp"><img src="./img/flow1.png" alt="flow"></picture>
+        </div>
+        <div class="flow2 button_fl">
+          <picture><source srcset="./img/flow2.webp" type="image/webp"><img src="./img/flow2.png" alt="flow"></picture>
+        </div>
+        <div class="flow3 button_fl">
+          <picture><source srcset="./img/flow3.webp" type="image/webp"><img src="./img/flow3.png" alt="flow"></picture>
+        </div>
+        <div class="flow4 button_fl">
+          <picture><source srcset="./img/flow4.webp" type="image/webp"><img src="./img/flow4.png" alt="flow"></picture>
+        </div>
+        <div class="container_button_main">
+          <div class="button_main">
+            <div class="bg_button_main">
+
+            </div>
+            <a href="#popup-callback-me" class="block_button_main">
+              Записаться
+              на прием
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="two_block zabota" id="zabota">
+      <div class="container content">
+        <h2 class="title">С заботой о самых важных</h2>
+        <p class="subtitle">Мы заботимся о улыбках маленьких пациентов: профессиональная стоматологическая помощь для
+          детей разного возраста</p>
+        <div class="punkts_content">
+          <div class="puncts_block">
+            <p class="number">01</p>
+            <div class="text_content">
+              <h4 class="title_text">Сделаем все, чтобы вылечить без наркоза</h4>
+              <p class="text_text">Наша задача – здоровый и счастливый ребенок. Много кейсов, когда мы лечили детей с
+                показаниями к наркозу без него. Но если это невозможно в вашем случае по объективным причинам, мы
+                вылечим ребенка в лучших условиях</p>
+              <div class="img_animate"><picture><source srcset="./img/01animate.webp" type="image/webp"><img src="./img/01animate.png" alt="animate"></picture></div>
+            </div>
+          </div>
+          <div class="puncts_block revers">
+            <p class="number">02</p>
+            <div class="text_content">
+              <h4 class="title_text">Лучшие технологии и материалы</h4>
+              <p class="text_text">Аппарат новейшего поколения для проведения наркоза из Германии
+                Материалы американские, немецкие и японские (Fuji, Estelite, Asteria)</p>
+              <div class="img_animate"><picture><source srcset="./img/02animate.webp" type="image/webp"><img src="./img/02animate.png" alt="animate"></picture></div>
+            </div>
+          </div>
+          <div class="puncts_block">
+            <p class="number">03</p>
+            <div class="text_content">
+              <h4 class="title_text">C нами всегда безопасно</h4>
+              <p class="text_text">У клиники есть лицензия на проведение лечения в наркозе
+                Анестезиолог-реаниматолог работает в команде с анестезиологической медицинской сестрой</p>
+              <div class="img_animate"><picture><source srcset="./img/03animate.webp" type="image/webp"><img src="./img/03animate.png" alt="animate"></picture></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="three_block stages_treatment" id="stages_treatment">
+      <div class="container content">
+        <h2 class="title">Этапы лечения</h2>
+        <p class="subtitle">Лечение зубов под наркозом и в седации для детей в премиальной клинике</p>
+
+        <div class="content_stages">
+          <div class="stages_item">
+            <div class="img_stages">
+
+              <p class="number_stages">01</p>
+              <picture><source srcset="./img/01stages.webp" type="image/webp"><img src="./img/01stages.png" alt="stages"></picture>
+            </div>
+            <h4 class="title_text">Знакомство с врачом</h4>
+            <p class="text_text">На первом приеме врач знакомится с ребёнком и родителями, проводит осмотр, делает
+              рентгенограммы для постановки правильного диагноза и составления плана лечения Если ребёнок напуган и не
+              готов к проведению исследования, врач проведёт быстрый осмотр в игровой форме, а снимки будут сделаны во
+              время лечения.</p>
+          </div>
+          <div class="stages_item">
+            <div class="img_stages">
+
+              <p class="number_stages">02</p>
+              <picture><source srcset="./img/02stages.webp" type="image/webp"><img src="./img/02stages.png" alt="stages"></picture>
+            </div>
+            <h4 class="title_text">Консультация</h4>
+            <p class="text_text">Пищу нельзя употреблять за 6 часов до процедуры, а воду за 5 часов. Грудное молоко,
+              кефир, смесь - это тоже еда! Поэтому рекомендуем назначать процедуру с учетом индивидуальных особенностей
+              и режима питания ребенка. Например, если ребенок все еще на грудном вскармливании, то лечение лучше
+              провести в обелённое время.</p>
+          </div>
+          <div class="stages_item">
+            <div class="img_stages">
+
+              <p class="number_stages">03</p>
+              <picture><source srcset="./img/03stages.webp" type="image/webp"><img src="./img/03stages.png" alt="stages"></picture>
+            </div>
+            <h4 class="title_text">Подготовка</h4>
+            <p class="text_text">Погружение в сон происходит на руках у родителя. Всего несколько вздохов газа Севоран
+              через мягкую силиконовую маску и малыш глубоко спит, а опытная команда врачей приступает к работе. Во
+              время процедуры анестезиологическая бригада проводит постоянный мониторинг основных жизненных показателей
+              состояния малыша.</p>
+          </div>
+          <div class="stages_item">
+            <div class="img_stages">
+
+              <p class="number_stages">04</p>
+              <picture><source srcset="./img/04stages.webp" type="image/webp"><img src="./img/04stages.png" alt="stages"></picture>
+            </div>
+            <h4 class="title_text">Лечение</h4>
+            <p class="text_text">На первом приеме врач знакомится с ребёнком и родителями, проводит осмотр, делает
+              рентгенограммы для постановки правильного диагноза и составления плана лечения Если ребёнок напуган и не
+              готов к проведению исследования, врач проведёт быстрый осмотр в игровой форме, а снимки будут сделаны во
+              время лечения.</p>
+          </div>
+        </div>
+
+        <a href="#popup-callback-me" class="button_braun"><span> Получить консультацию</span></a>
+
+      </div>
+    </section>
+
+    <section class="four_block questions">
+      <div class="container">
+        <div class="left_block">
+          <picture><source srcset="./img/form_img.webp" type="image/webp"><img src="./img/form_img.png" alt="questions"></picture>
+        </div>
+        <div class="form_block">
+          <div class="form_container  ">
+            <h2 class="title">Остались вопросы?</h2>
+            <p class="subtitle">Оставьте заявку на обратный звонок, и наши опытные стоматологи проконсультируют вас по
+              всем вопросам детской стоматологии</p>
+
+            <div class="form">
+              <input type="text" class="input_form name_input" placeholder="Ваше имя">
+              <input type="tel" class="input_form phone_input" placeholder="Телефон">
+              <input type="text" class="input_form name_child" placeholder="Имя ребенка">
+              <textarea name="textarea_text" class="input_form text_input" id="" cols="30" rows="10"
+                placeholder="Опишите ваш вопрос"></textarea>
+              <input type="submit" class="button_braun" value="Отправить запрос">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block_five team_slider" id="team_slider">
+      <div class="container">
+        <h2 class="title">Команда детского отделения</h2>
+        <p class="subtitle">В нашем Центре лучшие специалисты в отрасли</p>
+      </div>
+
+      <div class="slider_content">
+
+        <div class="swiper mySwiperTeam">
+          <div class="swiper-wrapper wrapper_team">
+            <div class="swiper-slide team_slide">
+              <div class="container_slide">
+                <div class="img_slider">
+                  <div class="img_container">
+                    <picture><source srcset="./img/slide1.webp" type="image/webp"><img src="./img/slide1.png" alt="slide"></picture>
+                  </div>
+                </div>
+                <h4 class="title_text ">Чебан Регина <br>
+                  Альбертовна</h4>
+                <p class="text_text">Координатор детского отделения</p>
+              </div>
+            </div>
+            <div class="swiper-slide team_slide">
+              <div class="container_slide">
+                <div class="img_slider">
+                  <div class="img_container">
+                    <picture><source srcset="./img/slide2.webp" type="image/webp"><img src="./img/slide2.png" alt="slide"></picture>
+                  </div>
+                </div>
+                <h4 class="title_text ">Фролова Ангелина <br>
+                  Сергеевна</h4>
+                <p class="text_text">Детский врач стоматолог</p>
+              </div>
+            </div>
+            <div class="swiper-slide team_slide">
+              <div class="container_slide">
+                <div class="img_slider">
+                  <div class="img_container">
+                    <picture><source srcset="./img/slide3.webp" type="image/webp"><img src="./img/slide3.png" alt="slide"></picture>
+                  </div>
+                </div>
+                <h4 class="title_text ">Харисов Александр <br>
+                  Ирекович</h4>
+                <p class="text_text">Врач анестезиолог-реаниматолог</p>
+              </div>
+            </div>
+            <div class="swiper-slide team_slide">
+              <div class="container_slide">
+                <div class="img_slider">
+                  <div class="img_container">
+                    <picture><source srcset="./img/slide4.webp" type="image/webp"><img src="./img/slide4.png" alt="slide"></picture>
+                  </div>
+                </div>
+                <h4 class="title_text ">Стаценко Екатерина<br>
+                  Сергеевна</h4>
+                <p class="text_text">Заведующий детским отделением</p>
+              </div>
+            </div>
+            <div class="swiper-slide team_slide">
+              <div class="container_slide">
+                <div class="img_slider">
+                  <div class="img_container">
+                    <picture><source srcset="./img/slide5.webp" type="image/webp"><img src="./img/slide5.png" alt="slide"></picture>
+                  </div>
+                </div>
+                <h4 class="title_text ">Назаренко Елена <br>
+                  Игоревна</h4>
+                <p class="text_text">Детский врач стоматолог</p>
+              </div>
+            </div>
+            <div class="swiper-slide team_slide">
+              <div class="container_slide">
+                <div class="img_slider">
+                  <div class="img_container">
+                    <picture><source srcset="./img/slide6.webp" type="image/webp"><img src="./img/slide6.png" alt="slide"></picture>
+                  </div>
+                </div>
+                <h4 class="title_text ">Цвитенко Ольга <br>
+                  Игоревна</h4>
+                <p class="text_text">Координатор детского отделения</p>
+              </div>
+            </div>
+
+            <div class="swiper-slide team_slide">
+              <div class="container_slide">
+                <div class="img_slider">
+                  <div class="img_container">
+                    <picture><source srcset="./img/slide1.webp" type="image/webp"><img src="./img/slide1.png" alt="slide"></picture>
+                  </div>
+                </div>
+                <h4 class="title_text ">Чебан Регина <br>
+                  Альбертовна</h4>
+                <p class="text_text">Координатор детского отделения</p>
+              </div>
+            </div>
+            <div class="swiper-slide team_slide">
+              <div class="container_slide">
+                <div class="img_slider">
+                  <div class="img_container">
+                    <picture><source srcset="./img/slide2.webp" type="image/webp"><img src="./img/slide2.png" alt="slide"></picture>
+                  </div>
+                </div>
+                <h4 class="title_text ">Фролова Ангелина <br>
+                  Сергеевна</h4>
+                <p class="text_text">Детский врач стоматолог</p>
+              </div>
+            </div>
+            <div class="swiper-slide team_slide">
+              <div class="container_slide">
+                <div class="img_slider">
+                  <div class="img_container">
+                    <picture><source srcset="./img/slide3.webp" type="image/webp"><img src="./img/slide3.png" alt="slide"></picture>
+                  </div>
+                </div>
+                <h4 class="title_text ">Харисов Александр <br>
+                  Ирекович</h4>
+                <p class="text_text">Врач анестезиолог-реаниматолог</p>
+              </div>
+            </div>
+            <div class="swiper-slide team_slide">
+              <div class="container_slide">
+                <div class="img_slider">
+                  <div class="img_container">
+                    <picture><source srcset="./img/slide4.webp" type="image/webp"><img src="./img/slide4.png" alt="slide"></picture>
+                  </div>
+                </div>
+                <h4 class="title_text ">Стаценко Екатерина<br>
+                  Сергеевна</h4>
+                <p class="text_text">Заведующий детским отделением</p>
+              </div>
+            </div>
+            <div class="swiper-slide team_slide">
+              <div class="container_slide">
+                <div class="img_slider">
+                  <div class="img_container">
+                    <picture><source srcset="./img/slide5.webp" type="image/webp"><img src="./img/slide5.png" alt="slide"></picture>
+                  </div>
+                </div>
+                <h4 class="title_text ">Назаренко Елена <br>
+                  Игоревна</h4>
+                <p class="text_text">Детский врач стоматолог</p>
+              </div>
+            </div>
+            <div class="swiper-slide team_slide">
+              <div class="container_slide">
+                <div class="img_slider">
+                  <div class="img_container">
+                    <picture><source srcset="./img/slide6.webp" type="image/webp"><img src="./img/slide6.png" alt="slide"></picture>
+                  </div>
+                </div>
+                <h4 class="title_text ">Цвитенко Ольга <br>
+                  Игоревна</h4>
+                <p class="text_text">Координатор детского отделения</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-button-next next_team"></div>
+          <div class="swiper-button-prev prev_team"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="block_six team_info" id="team_info">
+      <div class="container">
+        <div class="left_block">
+          <h2 class="title">Наша команда</h2>
+          <p class="subtitle">В нашем центре есть остеопатическое отделение, которое способствует восстановлению
+            организма после лечения.</p>
+          <p class="subtitle">Наши врачи регулярно проходят обучение по совершенствованию своих навыков.</p>
+          <ul class="ul_icon">
+            <li class="list_icon">
+              <div class="icon_li"><picture><source srcset="./img/icon_li1.webp" type="image/webp"><img src="./img/icon_li1.png" alt="icon"></picture></div>
+              <p class="text_li">Наших докторов любят и дети, и родители!</p>
+
+            </li>
+            <li class="list_icon">
+              <div class="icon_li"><picture><source srcset="./img/icon_li2.webp" type="image/webp"><img src="./img/icon_li2.png" alt="icon"></picture></div>
+              <p class="text_li">Специалисты обучались у Юлии Борисовны </p>
+
+            </li>
+            <li class="list_icon">
+              <div class="icon_li"><picture><source srcset="./img/icon_li3.webp" type="image/webp"><img src="./img/icon_li3.png" alt="icon"></picture></div>
+              <p class="text_li">Гиппенрейтер коммуникации с детьми</p>
+
+            </li>
+          </ul>
+
+        </div>
+        <div class="right_block">
+
+          <picture><source srcset="./img/ellleft1.webp" type="image/webp"><img class="elips_left1" src="./img/ellleft1.png" alt="ell"></picture>
+          <picture><source srcset="./img/ellleft2.webp" type="image/webp"><img class="elips_left2" src="./img/ellleft2.png" alt="ell"></picture>
+          <div class="team_photo">
+            <div class="team_photo_content">
+              <picture><source srcset="./img/team_photo.webp" type="image/webp"><img src="./img/team_photo.png" alt="team"></picture>
+            </div>
+          </div>
+
+          <div class="container_button_main">
+            <div class="button_main">
+              <div class="bg_button_main">
+
+              </div>
+              <a href="#popup-callback-me" class="block_button_main">
+                Записаться
+                на прием
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="block_seven feedbacks" id="feedbacks">
+      <div class="container">
+        <h2 class="title">Отзывы о нашей работе</h2>
+        <p class="subtitle">Впечатления наших клиентов - лучший показатель качества нашей работы!</p>
+        <div class="container_slider_feedback">
+          <div class="swiper mySwiperFeedback">
+            <div class="swiper-wrapper wrapper_feedback">
+              <div class="swiper-slide slide_feedback">
+                <h4 class="title_text">Анна Ефремова</h4>
+                <ul class="stars">
+                  <li class="star"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.64335 1.09764C8.75561 0.752152 9.24439 0.752152 9.35665 1.09764L11.1609 6.65071C11.2112 6.80522 11.3551 6.90983 11.5176 6.90983H17.3564C17.7197 6.90983 17.8707 7.37469 17.5769 7.58821L12.8531 11.0202C12.7217 11.1157 12.6667 11.285 12.7169 11.4395L14.5212 16.9925C14.6335 17.338 14.238 17.6253 13.9441 17.4118L9.22042 13.9798C9.08899 13.8843 8.91101 13.8843 8.77958 13.9798L4.05586 17.4118C3.76197 17.6253 3.36654 17.338 3.47879 16.9925L5.28309 11.4395C5.3333 11.2849 5.2783 11.1157 5.14687 11.0202L0.423147 7.58821C0.129254 7.37469 0.280295 6.90983 0.643566 6.90983H6.48241C6.64487 6.90983 6.78885 6.80522 6.83905 6.65071L8.64335 1.09764Z"
+                        fill="#F7CE46" />
+                    </svg></li>
+                  <li class="star"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.64335 1.09764C8.75561 0.752152 9.24439 0.752152 9.35665 1.09764L11.1609 6.65071C11.2112 6.80522 11.3551 6.90983 11.5176 6.90983H17.3564C17.7197 6.90983 17.8707 7.37469 17.5769 7.58821L12.8531 11.0202C12.7217 11.1157 12.6667 11.285 12.7169 11.4395L14.5212 16.9925C14.6335 17.338 14.238 17.6253 13.9441 17.4118L9.22042 13.9798C9.08899 13.8843 8.91101 13.8843 8.77958 13.9798L4.05586 17.4118C3.76197 17.6253 3.36654 17.338 3.47879 16.9925L5.28309 11.4395C5.3333 11.2849 5.2783 11.1157 5.14687 11.0202L0.423147 7.58821C0.129254 7.37469 0.280295 6.90983 0.643566 6.90983H6.48241C6.64487 6.90983 6.78885 6.80522 6.83905 6.65071L8.64335 1.09764Z"
+                        fill="#F7CE46" />
+                    </svg></li>
+                  <li class="star"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.64335 1.09764C8.75561 0.752152 9.24439 0.752152 9.35665 1.09764L11.1609 6.65071C11.2112 6.80522 11.3551 6.90983 11.5176 6.90983H17.3564C17.7197 6.90983 17.8707 7.37469 17.5769 7.58821L12.8531 11.0202C12.7217 11.1157 12.6667 11.285 12.7169 11.4395L14.5212 16.9925C14.6335 17.338 14.238 17.6253 13.9441 17.4118L9.22042 13.9798C9.08899 13.8843 8.91101 13.8843 8.77958 13.9798L4.05586 17.4118C3.76197 17.6253 3.36654 17.338 3.47879 16.9925L5.28309 11.4395C5.3333 11.2849 5.2783 11.1157 5.14687 11.0202L0.423147 7.58821C0.129254 7.37469 0.280295 6.90983 0.643566 6.90983H6.48241C6.64487 6.90983 6.78885 6.80522 6.83905 6.65071L8.64335 1.09764Z"
+                        fill="#F7CE46" />
+                    </svg></li>
+                  <li class="star"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.64335 1.09764C8.75561 0.752152 9.24439 0.752152 9.35665 1.09764L11.1609 6.65071C11.2112 6.80522 11.3551 6.90983 11.5176 6.90983H17.3564C17.7197 6.90983 17.8707 7.37469 17.5769 7.58821L12.8531 11.0202C12.7217 11.1157 12.6667 11.285 12.7169 11.4395L14.5212 16.9925C14.6335 17.338 14.238 17.6253 13.9441 17.4118L9.22042 13.9798C9.08899 13.8843 8.91101 13.8843 8.77958 13.9798L4.05586 17.4118C3.76197 17.6253 3.36654 17.338 3.47879 16.9925L5.28309 11.4395C5.3333 11.2849 5.2783 11.1157 5.14687 11.0202L0.423147 7.58821C0.129254 7.37469 0.280295 6.90983 0.643566 6.90983H6.48241C6.64487 6.90983 6.78885 6.80522 6.83905 6.65071L8.64335 1.09764Z"
+                        fill="#F7CE46" />
+                    </svg></li>
+                  <li class="star"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.64335 1.09764C8.75561 0.752152 9.24439 0.752152 9.35665 1.09764L11.1609 6.65071C11.2112 6.80522 11.3551 6.90983 11.5176 6.90983H17.3564C17.7197 6.90983 17.8707 7.37469 17.5769 7.58821L12.8531 11.0202C12.7217 11.1157 12.6667 11.285 12.7169 11.4395L14.5212 16.9925C14.6335 17.338 14.238 17.6253 13.9441 17.4118L9.22042 13.9798C9.08899 13.8843 8.91101 13.8843 8.77958 13.9798L4.05586 17.4118C3.76197 17.6253 3.36654 17.338 3.47879 16.9925L5.28309 11.4395C5.3333 11.2849 5.2783 11.1157 5.14687 11.0202L0.423147 7.58821C0.129254 7.37469 0.280295 6.90983 0.643566 6.90983H6.48241C6.64487 6.90983 6.78885 6.80522 6.83905 6.65071L8.64335 1.09764Z"
+                        fill="#F7CE46" />
+                    </svg></li>
+                </ul>
+                <p class="text_text">
+                  Хочется выразить благодарность замечательным докторам этого центра, настоящим профессионалам,
+                  влюбленным в свою профессию - Сухоруковой И. А. и Стаценко Е. С. Благодаря им ребенок перестал бояться
+                  стоматологичесикого кресла и на процедуры в клинику идет теперь как на встречу с лучшими друзьями.
+                  Решили сложный ортодонтический вопрос у дочки, который не могли решить в других местах. Зубы на глазах
+                  становятся красивее и ровнее, и радостная улыбка ребенка все чаще - а что еще нужно нам, мамам, для
+                  счастья!?) Огромное спасибо докторам клиники, вы настоящие волшебные зубные феи)
+
+                </p>
+              </div>
+              <div class="swiper-slide slide_feedback">
+                <h4 class="title_text">Info Groupvisota</h4>
+                <ul class="stars">
+                  <li class="star"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.64335 1.09764C8.75561 0.752152 9.24439 0.752152 9.35665 1.09764L11.1609 6.65071C11.2112 6.80522 11.3551 6.90983 11.5176 6.90983H17.3564C17.7197 6.90983 17.8707 7.37469 17.5769 7.58821L12.8531 11.0202C12.7217 11.1157 12.6667 11.285 12.7169 11.4395L14.5212 16.9925C14.6335 17.338 14.238 17.6253 13.9441 17.4118L9.22042 13.9798C9.08899 13.8843 8.91101 13.8843 8.77958 13.9798L4.05586 17.4118C3.76197 17.6253 3.36654 17.338 3.47879 16.9925L5.28309 11.4395C5.3333 11.2849 5.2783 11.1157 5.14687 11.0202L0.423147 7.58821C0.129254 7.37469 0.280295 6.90983 0.643566 6.90983H6.48241C6.64487 6.90983 6.78885 6.80522 6.83905 6.65071L8.64335 1.09764Z"
+                        fill="#F7CE46" />
+                    </svg></li>
+                  <li class="star"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.64335 1.09764C8.75561 0.752152 9.24439 0.752152 9.35665 1.09764L11.1609 6.65071C11.2112 6.80522 11.3551 6.90983 11.5176 6.90983H17.3564C17.7197 6.90983 17.8707 7.37469 17.5769 7.58821L12.8531 11.0202C12.7217 11.1157 12.6667 11.285 12.7169 11.4395L14.5212 16.9925C14.6335 17.338 14.238 17.6253 13.9441 17.4118L9.22042 13.9798C9.08899 13.8843 8.91101 13.8843 8.77958 13.9798L4.05586 17.4118C3.76197 17.6253 3.36654 17.338 3.47879 16.9925L5.28309 11.4395C5.3333 11.2849 5.2783 11.1157 5.14687 11.0202L0.423147 7.58821C0.129254 7.37469 0.280295 6.90983 0.643566 6.90983H6.48241C6.64487 6.90983 6.78885 6.80522 6.83905 6.65071L8.64335 1.09764Z"
+                        fill="#F7CE46" />
+                    </svg></li>
+                  <li class="star"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.64335 1.09764C8.75561 0.752152 9.24439 0.752152 9.35665 1.09764L11.1609 6.65071C11.2112 6.80522 11.3551 6.90983 11.5176 6.90983H17.3564C17.7197 6.90983 17.8707 7.37469 17.5769 7.58821L12.8531 11.0202C12.7217 11.1157 12.6667 11.285 12.7169 11.4395L14.5212 16.9925C14.6335 17.338 14.238 17.6253 13.9441 17.4118L9.22042 13.9798C9.08899 13.8843 8.91101 13.8843 8.77958 13.9798L4.05586 17.4118C3.76197 17.6253 3.36654 17.338 3.47879 16.9925L5.28309 11.4395C5.3333 11.2849 5.2783 11.1157 5.14687 11.0202L0.423147 7.58821C0.129254 7.37469 0.280295 6.90983 0.643566 6.90983H6.48241C6.64487 6.90983 6.78885 6.80522 6.83905 6.65071L8.64335 1.09764Z"
+                        fill="#F7CE46" />
+                    </svg></li>
+                  <li class="star"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.64335 1.09764C8.75561 0.752152 9.24439 0.752152 9.35665 1.09764L11.1609 6.65071C11.2112 6.80522 11.3551 6.90983 11.5176 6.90983H17.3564C17.7197 6.90983 17.8707 7.37469 17.5769 7.58821L12.8531 11.0202C12.7217 11.1157 12.6667 11.285 12.7169 11.4395L14.5212 16.9925C14.6335 17.338 14.238 17.6253 13.9441 17.4118L9.22042 13.9798C9.08899 13.8843 8.91101 13.8843 8.77958 13.9798L4.05586 17.4118C3.76197 17.6253 3.36654 17.338 3.47879 16.9925L5.28309 11.4395C5.3333 11.2849 5.2783 11.1157 5.14687 11.0202L0.423147 7.58821C0.129254 7.37469 0.280295 6.90983 0.643566 6.90983H6.48241C6.64487 6.90983 6.78885 6.80522 6.83905 6.65071L8.64335 1.09764Z"
+                        fill="#F7CE46" />
+                    </svg></li>
+                  <li class="star"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.64335 1.09764C8.75561 0.752152 9.24439 0.752152 9.35665 1.09764L11.1609 6.65071C11.2112 6.80522 11.3551 6.90983 11.5176 6.90983H17.3564C17.7197 6.90983 17.8707 7.37469 17.5769 7.58821L12.8531 11.0202C12.7217 11.1157 12.6667 11.285 12.7169 11.4395L14.5212 16.9925C14.6335 17.338 14.238 17.6253 13.9441 17.4118L9.22042 13.9798C9.08899 13.8843 8.91101 13.8843 8.77958 13.9798L4.05586 17.4118C3.76197 17.6253 3.36654 17.338 3.47879 16.9925L5.28309 11.4395C5.3333 11.2849 5.2783 11.1157 5.14687 11.0202L0.423147 7.58821C0.129254 7.37469 0.280295 6.90983 0.643566 6.90983H6.48241C6.64487 6.90983 6.78885 6.80522 6.83905 6.65071L8.64335 1.09764Z"
+                        fill="#F7CE46" />
+                    </svg></li>
+                </ul>
+                <p class="text_text">
+                  Место, где чувствуешь себя в надежных руках докторов, где координатор как хороший друг помогает маме с
+                  грудным ребенком и еще детьми полечить зубы)), и хорошие детские специалисты, ничего лишнего - ребенка
+                  развлекают, дают подарки в конце визита, и он ждет того, чтобы еще полечить зубки, лежа горизонтально
+                  в кресле - так как мультфильмы крутят на потолке.
+                  Еще важный момент, будучи в положении уже прямо без пяти минут роды, за дыру в переднем зубе без
+                  снимка и анестезии не брался никто… Евгений Михайлович очень помог - безболезненно и без обучения
+                  снимком устранил дыру.
+
+                </p>
+              </div>
+              <div class="swiper-slide slide_feedback">
+                <h4 class="title_text">Наталья С</h4>
+                <ul class="stars">
+                  <li class="star"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.64335 1.09764C8.75561 0.752152 9.24439 0.752152 9.35665 1.09764L11.1609 6.65071C11.2112 6.80522 11.3551 6.90983 11.5176 6.90983H17.3564C17.7197 6.90983 17.8707 7.37469 17.5769 7.58821L12.8531 11.0202C12.7217 11.1157 12.6667 11.285 12.7169 11.4395L14.5212 16.9925C14.6335 17.338 14.238 17.6253 13.9441 17.4118L9.22042 13.9798C9.08899 13.8843 8.91101 13.8843 8.77958 13.9798L4.05586 17.4118C3.76197 17.6253 3.36654 17.338 3.47879 16.9925L5.28309 11.4395C5.3333 11.2849 5.2783 11.1157 5.14687 11.0202L0.423147 7.58821C0.129254 7.37469 0.280295 6.90983 0.643566 6.90983H6.48241C6.64487 6.90983 6.78885 6.80522 6.83905 6.65071L8.64335 1.09764Z"
+                        fill="#F7CE46" />
+                    </svg></li>
+                  <li class="star"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.64335 1.09764C8.75561 0.752152 9.24439 0.752152 9.35665 1.09764L11.1609 6.65071C11.2112 6.80522 11.3551 6.90983 11.5176 6.90983H17.3564C17.7197 6.90983 17.8707 7.37469 17.5769 7.58821L12.8531 11.0202C12.7217 11.1157 12.6667 11.285 12.7169 11.4395L14.5212 16.9925C14.6335 17.338 14.238 17.6253 13.9441 17.4118L9.22042 13.9798C9.08899 13.8843 8.91101 13.8843 8.77958 13.9798L4.05586 17.4118C3.76197 17.6253 3.36654 17.338 3.47879 16.9925L5.28309 11.4395C5.3333 11.2849 5.2783 11.1157 5.14687 11.0202L0.423147 7.58821C0.129254 7.37469 0.280295 6.90983 0.643566 6.90983H6.48241C6.64487 6.90983 6.78885 6.80522 6.83905 6.65071L8.64335 1.09764Z"
+                        fill="#F7CE46" />
+                    </svg></li>
+                  <li class="star"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.64335 1.09764C8.75561 0.752152 9.24439 0.752152 9.35665 1.09764L11.1609 6.65071C11.2112 6.80522 11.3551 6.90983 11.5176 6.90983H17.3564C17.7197 6.90983 17.8707 7.37469 17.5769 7.58821L12.8531 11.0202C12.7217 11.1157 12.6667 11.285 12.7169 11.4395L14.5212 16.9925C14.6335 17.338 14.238 17.6253 13.9441 17.4118L9.22042 13.9798C9.08899 13.8843 8.91101 13.8843 8.77958 13.9798L4.05586 17.4118C3.76197 17.6253 3.36654 17.338 3.47879 16.9925L5.28309 11.4395C5.3333 11.2849 5.2783 11.1157 5.14687 11.0202L0.423147 7.58821C0.129254 7.37469 0.280295 6.90983 0.643566 6.90983H6.48241C6.64487 6.90983 6.78885 6.80522 6.83905 6.65071L8.64335 1.09764Z"
+                        fill="#F7CE46" />
+                    </svg></li>
+                  <li class="star"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.64335 1.09764C8.75561 0.752152 9.24439 0.752152 9.35665 1.09764L11.1609 6.65071C11.2112 6.80522 11.3551 6.90983 11.5176 6.90983H17.3564C17.7197 6.90983 17.8707 7.37469 17.5769 7.58821L12.8531 11.0202C12.7217 11.1157 12.6667 11.285 12.7169 11.4395L14.5212 16.9925C14.6335 17.338 14.238 17.6253 13.9441 17.4118L9.22042 13.9798C9.08899 13.8843 8.91101 13.8843 8.77958 13.9798L4.05586 17.4118C3.76197 17.6253 3.36654 17.338 3.47879 16.9925L5.28309 11.4395C5.3333 11.2849 5.2783 11.1157 5.14687 11.0202L0.423147 7.58821C0.129254 7.37469 0.280295 6.90983 0.643566 6.90983H6.48241C6.64487 6.90983 6.78885 6.80522 6.83905 6.65071L8.64335 1.09764Z"
+                        fill="#F7CE46" />
+                    </svg></li>
+                  <li class="star"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.64335 1.09764C8.75561 0.752152 9.24439 0.752152 9.35665 1.09764L11.1609 6.65071C11.2112 6.80522 11.3551 6.90983 11.5176 6.90983H17.3564C17.7197 6.90983 17.8707 7.37469 17.5769 7.58821L12.8531 11.0202C12.7217 11.1157 12.6667 11.285 12.7169 11.4395L14.5212 16.9925C14.6335 17.338 14.238 17.6253 13.9441 17.4118L9.22042 13.9798C9.08899 13.8843 8.91101 13.8843 8.77958 13.9798L4.05586 17.4118C3.76197 17.6253 3.36654 17.338 3.47879 16.9925L5.28309 11.4395C5.3333 11.2849 5.2783 11.1157 5.14687 11.0202L0.423147 7.58821C0.129254 7.37469 0.280295 6.90983 0.643566 6.90983H6.48241C6.64487 6.90983 6.78885 6.80522 6.83905 6.65071L8.64335 1.09764Z"
+                        fill="#F7CE46" />
+                    </svg></li>
+                </ul>
+                <p class="text_text">
+                  Детские стоматологи - это настоящие волшебники! Приезжали сегодня удалить зуб: все прошло как в
+                  сказке: ребенок не заметил ничего. Да еще и время нашли для непредвиденного визита! Екатерина
+                  Сергеевна, мы рады, что Вы - наш доктор! Рекомендовала и буду вновь рекомендовать другим. Такого
+                  сервиса и уровня профессионализма не встретить больше нигде! Мы с вами!
+
+                </p>
+              </div>
+
+            </div>
+            <div class="swiper-button-next next_feedback"></div>
+            <div class="swiper-button-prev prev_feedback"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block_eiht contacts" id="contacts">
+      <div class="container">
+        <div class="left_block">
+          <div class="team_photo">
+            <div class="team_photo_content">
+              <div id="map"></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="right_block">
+          <h2 class="title">Наши контакты</h2>
+          <p class="subtitle">Свяжитесь с нами, чтобы получить квалифицированную помощь и заботу о вашей улыбке!</p>
+          <div class="item_contacts">
+            <h4 class="title_text ">
+              Адрес
+            </h4>
+            <div class="icon_contacts">
+              <div class="icon"><picture><source srcset="./img/map_c.webp" type="image/webp"><img src="./img/map_c.png" alt="map"></picture></div>
+              <div class="contacts_item_content"> <a href="#" target="_blank" class="text_text">Москва, Лопухинский
+                  переулок, дом 3, строение 3</a></div>
+
+            </div>
+          </div>
+          <div class="item_contacts">
+            <h4 class="title_text ">
+              Телефон
+            </h4>
+            <div class="icon_contacts">
+              <div class="icon"><picture><source srcset="./img/tel_c.webp" type="image/webp"><img src="./img/tel_c.png" alt="map"></picture></div>
+              <div class="contacts_item_content"> <a href="tel:+74955802805" class="text_text">+7 (495) 580-28-05</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="item_contacts">
+            <h4 class="title_text ">
+              Почта
+            </h4>
+            <div class="icon_contacts">
+              <div class="icon"><picture><source srcset="./img/email_c.webp" type="image/webp"><img src="./img/email_c.png" alt="map"></picture></div>
+              <div class="contacts_item_content"> <a href="mailto:info@vn-center.ru"
+                  class="text_text">info@vn-center.ru</a> </div>
+
+            </div>
+          </div>
+
+          <div class="item_contacts">
+            <h4 class="title_text ">
+              Рабочие часы
+            </h4>
+            <div class="icon_contacts">
+              <div class="icon"><picture><source srcset="./img/clock_c.webp" type="image/webp"><img src="./img/clock_c.png" alt="map"></picture></div>
+              <div class="contacts_item_content clock">
+                <p class="text_text">Пн - Пт : с <b>8:30</b> до <b>21:00</b> </p>
+                <p class="text_text">Сб : с <b>9:00</b> до <b>21:00</b> </p>
+                <p class="text_text">Вс : <b>Выходной</b> </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<footer class="footer">
+
+  <div class="container">
+    <div class="top_footer">
+      <a href="#main_banner" class="logo_footer"><picture><source srcset="./img/logostom.webp" type="image/webp"><img src="./img/logostom.png" alt="logo"></picture></a>
+      <nav class="footer_nav">
+        <li class="footer_li"><a href="#main_banner">Главная</a></li>
+        <li class="footer_li"><a href="#zabota">Преимущества</a></li>
+        <li class="footer_li"><a href="#stages_treatment">Этапы лечения</a></li>
+        <li class="footer_li"><a href="#team_slider">Специалисты</a></li>
+        <li class="footer_li"><a href="#team_info">Команда</a></li>
+        <li class="footer_li"><a href="#feedbacks">Отзывы</a></li>
+        <li class="footer_li"><a href="#contacts">Контакты</a></li>
+      </nav>
+    </div>
+
+    <div class="bottom_footer">
+      <div class="text_lighr">
+        ООО «Стоматологическая клиника <br> Владимира Новикова»
+
+      </div>
+      <div class="text_lighr">
+        ОГРН 1027739325767 <br> 
+        ИНН 7704236252
+        
+        
+
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<div class="popup-form popup-callback-me" id="popup-callback-me">
+  <div class="popup-body">
+      <div class="popup-content">
+              <div class="content">
+                  <a href="#head" class="popap-area close_popup"><svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M9.21218 11.2316L0.564182 19.7404L2.83325 22.0466L11.4813 13.5378L19.9903 22.1859L22.2964 19.9169L13.7874 11.2687L22.4358 2.75952L20.1667 0.453337L11.5184 8.96251L3.00937 0.314344L0.703193 2.58341L9.21218 11.2316Z"
+                              fill="#101827" />
+                      </svg></a>
+                      <div class="form_block">
+                        <div class="form_container  ">
+                          <h2 class="title">Записаться
+                            на консультацию</h2>
+                          <p class="subtitle">Оставьте заявку и наш менеджер перезвонит вам в течение 15 минут</p>
+                
+                          <div class="form">
+                            <input type="text" class="input_form name_input" placeholder="Ваше имя">
+                            <input type="tel" class="input_form phone_input" placeholder="Телефон">
+                            
+                            <input type="submit" class="button_braun" value="Оставить заявку">
+                
+                          </div>
+                        </div>
+                      </div>
+                      <div class="img_block">
+                        <picture><source srcset="./img/popups.webp" type="image/webp"><img src="./img/popups.png" alt="popup"></picture>
+                      </div>
+              </div>
+      </div>
+  </div>
+</div>
+
+<div class="popup-form popup-callback-me" id="popup-thanks-me">
+  <div class="popup-body">
+      <div class="popup-content">
+              <div class="content">
+                  <a href="#head" class="popap-area close_popup"><svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M9.21218 11.2316L0.564182 19.7404L2.83325 22.0466L11.4813 13.5378L19.9903 22.1859L22.2964 19.9169L13.7874 11.2687L22.4358 2.75952L20.1667 0.453337L11.5184 8.96251L3.00937 0.314344L0.703193 2.58341L9.21218 11.2316Z"
+                              fill="#101827" />
+                      </svg></a>
+                      <div class="form_block">
+                        <div class="form_container  ">
+                          <h2 class="title">Благодарим 
+                            за запись на консультацию</h2>
+                          <p class="subtitle">Наш менеджер перезвонит вам в ближайшее время</p>
+                        </div>
+                      </div>
+                      <div class="img_block">
+                        <picture><source srcset="./img/thanks.webp" type="image/webp"><img src="./img/thanks.png" alt="popup"></picture>
+                      </div>
+              </div>
+      </div>
+  </div>
+</div>
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=93775cab-042c-42dc-b214-105bf757c6b1&_v=20230429214104" type="text/javascript"></script>
+  <script src="js/app.min.js?_v=20230429214104"></script>
+</body>
+
+</html>
