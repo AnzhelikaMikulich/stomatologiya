@@ -140,6 +140,10 @@ body {
   position: relative;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 section {
   overflow: hidden;
 }
@@ -366,13 +370,18 @@ a.text_text b {
           transform: translateY(0.104vw);
 }
 
+.menu_header.first_header_menu {
+  position: fixed;
+  right: 12.5vw;
+}
+
 .header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 5.208vw;
-  z-index: 150;
+  z-index: 50;
 }
 
 .header .container {
@@ -410,6 +419,23 @@ a.text_text b {
           align-items: center;
   gap: 0.781vw;
   margin-left: -25vw;
+}
+
+.header .first_header_container {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.header .first_header_container .sotial_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.781vw;
+  margin-left: 5.125vw;
 }
 
 .header .telegramm {
@@ -955,8 +981,6 @@ a.text_text b {
 }
 
 .main_banner .flovers .button_main {
-  -webkit-filter: drop-shadow(0vw 0vw 1.406vw rgba(131, 120, 92, 0.65));
-          filter: drop-shadow(0vw 0vw 1.406vw rgba(131, 120, 92, 0.65));
   width: 18.021vw;
   height: 18.021vw;
   position: relative;
@@ -1013,6 +1037,8 @@ a.text_text b {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+  -webkit-box-shadow: 0vw 0vw 1.406vw rgba(131, 120, 92, 0.65);
+          box-shadow: 0vw 0vw 1.406vw rgba(131, 120, 92, 0.65);
 }
 
 .main_banner .flovers .button_main .block_button_main {
@@ -1902,11 +1928,11 @@ a.text_text b {
   -webkit-transform: scale(0.6);
       -ms-transform: scale(0.6);
           transform: scale(0.6);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .block_five .team_slide.swiper-slide-active {
@@ -1917,11 +1943,11 @@ a.text_text b {
   -webkit-transform: scale(0.6);
       -ms-transform: scale(0.6);
           transform: scale(0.6);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .block_five .team_slide.swiper-slide-next {
@@ -1932,11 +1958,11 @@ a.text_text b {
   -webkit-transform: scale(0.75);
       -ms-transform: scale(0.75);
           transform: scale(0.75);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .block_five .team_slide.swiper-slide-next + .team_slide {
@@ -1947,11 +1973,11 @@ a.text_text b {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .block_five .team_slide.swiper-slide-next + .team_slide + .team_slide {
@@ -1962,11 +1988,11 @@ a.text_text b {
   -webkit-transform: scale(0.75);
       -ms-transform: scale(0.75);
           transform: scale(0.75);
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  -o-transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .no-webp .block_six {
@@ -2122,8 +2148,6 @@ a.text_text b {
 }
 
 .block_six .button_main {
-  -webkit-filter: drop-shadow(0vw 0vw 1.406vw rgba(131, 120, 92, 0.65));
-          filter: drop-shadow(0vw 0vw 1.406vw rgba(131, 120, 92, 0.65));
   width: 18.021vw;
   height: 18.021vw;
   position: relative;
@@ -2180,6 +2204,8 @@ a.text_text b {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+  -webkit-box-shadow: 0vw 0vw 1.406vw rgba(131, 120, 92, 0.65);
+          box-shadow: 0vw 0vw 1.406vw rgba(131, 120, 92, 0.65);
 }
 
 .block_six .button_main .block_button_main {
@@ -2236,6 +2262,7 @@ a.text_text b {
 
 .block_seven .mySwiperFeedback {
   padding-bottom: 10.417vw;
+  overflow: visible;
 }
 
 .block_seven .slide_feedback {
@@ -2367,7 +2394,7 @@ a.text_text b {
   background: #d4c8ac;
   border-radius: 21.875vw 23.438vw 23.438vw 26.042vw;
   position: absolute;
-  top: 0;
+  top: 2.604vw;
   left: -5.208vw;
 }
 
@@ -2378,8 +2405,9 @@ a.text_text b {
   position: absolute;
   top: -0.521vw;
   left: 0.521vw;
-  border-radius: 21.875vw 20.792vw 21.875vw 23.438vw;
+  border-radius: 22.875vw 24.792vw 24.875vw 25.438vw;
   overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .block_eiht .team_photo_content #map {
@@ -2535,12 +2563,13 @@ a.text_text b {
 }
 
 .burger_menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   width: 100%;
   height: 100vh;
+  overflow-y: scroll;
   background: -webkit-gradient(linear, left bottom, left top, from(#f3e7c9), to(#f3e7c9));
   background: -o-linear-gradient(bottom, #f3e7c9, #f3e7c9);
   background: linear-gradient(0deg, #f3e7c9, #f3e7c9);
@@ -2570,13 +2599,21 @@ a.text_text b {
   display: none;
 }
 
-.burger_menu .container {
+.burger_menu .header .sotial_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.burger_menu .burger_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 56.563vw;
+  min-height: 100vh;
 }
 
 .burger_menu .header_nav {
@@ -2856,7 +2893,7 @@ a.text_text b {
     left: 0;
     width: 100%;
     height: 15.625vw;
-    z-index: 150;
+    z-index: 50;
   }
 
   .header .container {
@@ -2870,6 +2907,12 @@ a.text_text b {
         -ms-flex-pack: justify;
             justify-content: space-between;
     height: 100%;
+  }
+
+  .header .container.first_header_container {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 
   .header .logo_header {
@@ -3087,6 +3130,12 @@ a.text_text b {
     transition: 0.3s ease-in-out;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  .header .menu_header.first_header_menu {
+    position: fixed;
+    right: auto;
+    left: 3.906vw;
   }
 
   .fixed_menu {
@@ -3483,8 +3532,6 @@ a.text_text b {
   }
 
   .main_banner .flovers .button_main {
-    -webkit-filter: drop-shadow(0vw 0vw 3.515vw rgba(131, 120, 92, 0.65));
-            filter: drop-shadow(0vw 0vw 3.515vw rgba(131, 120, 92, 0.65));
     width: 33.326vw;
     height: 33.326vw;
     position: relative;
@@ -3541,6 +3588,8 @@ a.text_text b {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
+    -webkit-box-shadow: 0vw 0vw 3.515vw rgba(131, 120, 92, 0.65);
+            box-shadow: 0vw 0vw 3.515vw rgba(131, 120, 92, 0.65);
   }
 
   .main_banner .flovers .button_main .block_button_main {
@@ -4405,11 +4454,11 @@ a.text_text b {
     -webkit-transform: scale(0.6);
         -ms-transform: scale(0.6);
             transform: scale(0.6);
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
 
   .block_five .team_slide.swiper-slide-active {
@@ -4420,11 +4469,11 @@ a.text_text b {
     -webkit-transform: scale(0.6);
         -ms-transform: scale(0.6);
             transform: scale(0.6);
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
 
   .block_five .team_slide.swiper-slide-next {
@@ -4435,11 +4484,11 @@ a.text_text b {
     -webkit-transform: scale(0.75);
         -ms-transform: scale(0.75);
             transform: scale(0.75);
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
 
   .block_five .team_slide.swiper-slide-next + .team_slide {
@@ -4450,11 +4499,11 @@ a.text_text b {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
 
   .block_five .team_slide.swiper-slide-next + .team_slide + .team_slide {
@@ -4465,11 +4514,11 @@ a.text_text b {
     -webkit-transform: scale(0.75);
         -ms-transform: scale(0.75);
             transform: scale(0.75);
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
 
   .no-webp .block_six {
@@ -4633,8 +4682,6 @@ a.text_text b {
   }
 
   .block_six .button_main {
-    -webkit-filter: drop-shadow(0vw 0vw 3.515vw rgba(131, 120, 92, 0.65));
-            filter: drop-shadow(0vw 0vw 3.515vw rgba(131, 120, 92, 0.65));
     width: 36.451vw;
     height: 36.451vw;
     position: relative;
@@ -4691,6 +4738,8 @@ a.text_text b {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
+    -webkit-box-shadow: 0vw 0vw 3.515vw rgba(131, 120, 92, 0.65);
+            box-shadow: 0vw 0vw 3.515vw rgba(131, 120, 92, 0.65);
   }
 
   .block_six .button_main .block_button_main {
@@ -5056,7 +5105,7 @@ a.text_text b {
   }
 
   .burger_menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 120;
@@ -5076,6 +5125,17 @@ a.text_text b {
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   }
 
+  .burger_menu .header .container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 9.115vw;
+  }
+
+  .burger_menu .header .sotial_header {
+    display: none;
+  }
+
   .burger_menu.active {
     -webkit-transform: translate(0, 0);
         -ms-transform: translate(0, 0);
@@ -5087,7 +5147,7 @@ a.text_text b {
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   }
 
-  .burger_menu .container {
+  .burger_menu .burger_container {
     position: absolute;
     left: 0;
     top: 0;
@@ -5464,7 +5524,7 @@ a.text_text b {
     left: 0;
     width: 100%;
     height: 22.933vw;
-    z-index: 150;
+    z-index: 50;
   }
 
   .header .container {
@@ -5872,16 +5932,18 @@ a.text_text b {
   }
 
   .burger_menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 120;
     width: 100%;
     height: 100vh;
-    background: rgba(51, 51, 51, 0.76);
-    -webkit-backdrop-filter: blur(0.533vw);
-            backdrop-filter: blur(0.533vw);
-    padding-top: 40vw;
+    background: -webkit-gradient(linear, left bottom, left top, from(#F3E7C9), to(#F3E7C9));
+    background: -o-linear-gradient(bottom, #F3E7C9, #F3E7C9);
+    background: linear-gradient(0deg, #F3E7C9, #F3E7C9);
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+    padding-top: 22vw;
     -webkit-transform: translate(-100%, 0);
         -ms-transform: translate(-100%, 0);
             transform: translate(-100%, 0);
@@ -5890,6 +5952,13 @@ a.text_text b {
     -o-transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+
+  .burger_menu .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 150;
   }
 
   .burger_menu.active {
@@ -5903,8 +5972,17 @@ a.text_text b {
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   }
 
-  .burger_menu .container {
+  .burger_menu .scroll_container {
+    width: 100vw;
+    overflow-y: scroll;
+    height: 100vh;
     position: absolute;
+    left: 0;
+    top: 22.133vw;
+  }
+
+  .burger_menu .burger_container {
+    position: static;
     left: 0;
     top: 0;
     display: -webkit-box;
@@ -5914,9 +5992,8 @@ a.text_text b {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100vw;
-    overflow-y: scroll;
     padding-bottom: 16vw;
-    height: 100vh;
+    height: 220.667vw;
     background: -webkit-gradient(linear, left bottom, left top, from(#F3E7C9), to(#F3E7C9));
     background: -o-linear-gradient(bottom, #F3E7C9, #F3E7C9);
     background: linear-gradient(0deg, #F3E7C9, #F3E7C9);
@@ -5932,7 +6009,7 @@ a.text_text b {
   }
 
   .burger_menu .header_nav {
-    padding-top: 40.533vw;
+    padding-top: 10.533vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6209,8 +6286,6 @@ a.text_text b {
   }
 
   .main_banner .flovers .button_main {
-    -webkit-filter: drop-shadow(0vw 0vw 7.199vw rgba(131, 120, 92, 0.65));
-            filter: drop-shadow(0vw 0vw 7.199vw rgba(131, 120, 92, 0.65));
     width: 52.888vw;
     height: 52.888vw;
     position: relative;
@@ -6267,6 +6342,8 @@ a.text_text b {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
+    -webkit-box-shadow: 0vw 0vw 7.199vw rgba(131, 120, 92, 0.65);
+            box-shadow: 0vw 0vw 7.199vw rgba(131, 120, 92, 0.65);
   }
 
   .main_banner .flovers .button_main .block_button_main {
@@ -7234,13 +7311,11 @@ a.text_text b {
   .block_five .title_text {
     padding-top: 8.003vw;
     text-align: center;
-    width: 75vw;
   }
 
   .block_five .text_text {
     padding-top: 3.998vw;
     text-align: center;
-    width: 65vw;
   }
 
   .block_five .swiper-button-next,
@@ -7316,11 +7391,11 @@ a.text_text b {
     -webkit-transform: scale(0.6);
         -ms-transform: scale(0.6);
             transform: scale(0.6);
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
 
   .block_five .team_slide.swiper-slide-active {
@@ -7331,11 +7406,11 @@ a.text_text b {
     -webkit-transform: scale(0.6);
         -ms-transform: scale(0.6);
             transform: scale(0.6);
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
 
   .block_five .team_slide.swiper-slide-next {
@@ -7346,11 +7421,19 @@ a.text_text b {
     -webkit-transform: scale(0.75);
         -ms-transform: scale(0.75);
             transform: scale(0.75);
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  }
+
+  .block_five .team_slide.swiper-slide-next .title_text {
+    width: 75vw;
+  }
+
+  .block_five .team_slide.swiper-slide-next .text_text {
+    width: 65vw;
   }
 
   .block_five .team_slide.swiper-slide-next + .team_slide {
@@ -7361,11 +7444,19 @@ a.text_text b {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  }
+
+  .block_five .team_slide.swiper-slide-next + .team_slide .title_text {
+    width: 75vw;
+  }
+
+  .block_five .team_slide.swiper-slide-next + .team_slide .text_text {
+    width: 65vw;
   }
 
   .block_five .team_slide.swiper-slide-next + .team_slide + .team_slide {
@@ -7376,11 +7467,19 @@ a.text_text b {
     -webkit-transform: scale(0.75);
         -ms-transform: scale(0.75);
             transform: scale(0.75);
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  }
+
+  .block_five .team_slide.swiper-slide-next + .team_slide + .team_slide .title_text {
+    width: 75vw;
+  }
+
+  .block_five .team_slide.swiper-slide-next + .team_slide + .team_slide .text_text {
+    width: 65vw;
   }
 
   .no-webp .block_six {
@@ -7454,7 +7553,7 @@ a.text_text b {
   }
 
   .block_six .ul_icon .list_icon:nth-child(2) {
-    gap: 13.333vw;
+    gap: 11.333vw;
   }
 
   .block_six .ul_icon .list_icon:nth-child(2) .icon_li {
@@ -7540,8 +7639,6 @@ a.text_text b {
   }
 
   .block_six .button_main {
-    -webkit-filter: drop-shadow(0vw 0vw 7.199vw rgba(131, 120, 92, 0.65));
-            filter: drop-shadow(0vw 0vw 7.199vw rgba(131, 120, 92, 0.65));
     width: 52.888vw;
     height: 52.888vw;
     position: relative;
@@ -7598,6 +7695,8 @@ a.text_text b {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
+    -webkit-box-shadow: 0vw 0vw 7.199vw rgba(131, 120, 92, 0.65);
+            box-shadow: 0vw 0vw 7.199vw rgba(131, 120, 92, 0.65);
   }
 
   .block_six .button_main .block_button_main {
@@ -7741,7 +7840,7 @@ a.text_text b {
 
   .block_eiht {
     min-height: auto;
-    padding-top: 34.933vw;
+    padding-top: 4.933vw;
     padding-bottom: 14.666vw;
   }
 
@@ -7910,7 +8009,7 @@ a.text_text b {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-bottom: 14.665vw;
+    padding-bottom: 20.067vw;
     gap: 4vw;
   }
 
